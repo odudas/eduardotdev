@@ -1,6 +1,6 @@
 interface NavTabItemProps {
   title: string
-  url?: string
+  url?: string // TODO fix
 }
 
 export function NavTabItem({ url, title }: NavTabItemProps) {
