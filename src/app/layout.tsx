@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/components/Header.tsx'
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -18,9 +19,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" className="antialiased">
-      <body className={roboto.className}>
-        <div className="bg-zinc-950 min-h-screen">{children}</div>
+    <html lang="pt-br">
+      <body
+        className={`${roboto.className} bg-zinc-900 text-zinc-400 antialiased leading-relaxed`}
+      >
+        <div className="mx-auto min-h-screen max-w-screen-xl px-6">
+          <div className="flex justify-between gap-4">
+            <Header />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   )
