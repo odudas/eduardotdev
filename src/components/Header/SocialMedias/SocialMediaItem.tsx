@@ -3,7 +3,7 @@ import { ElementType } from 'react'
 interface SocialMediaItemProps {
   icon: ElementType
   alt: string
-  url?: string
+  url?: string // TODO fix
 }
 
 export function SocialMediaItem({
