@@ -3,7 +3,7 @@ import { SocialMedias } from './SocialMedias'
 
 export function Header() {
   return (
-    <header className="sticky flex min-h-screen w-1/2 flex-col justify-between py-16">
+    <header className="sticky flex min-h-screen w-1/2 flex-col justify-between py-20">
       <div>
         <h1 className="text-5xl font-bold tracking-tight text-zinc-200">
           Eduardo Tavares
