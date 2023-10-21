@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${roboto.className} bg-zinc-900 leading-relaxed text-zinc-400 antialiased`}
       >
-        <div className="mx-auto min-h-screen max-w-screen-xl px-6">
+        <div className="mx-auto min-h-screen max-w-screen-xl px-24">
           <div className="flex justify-between gap-4">
             <Header />
             {children}
