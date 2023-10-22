@@ -2,7 +2,7 @@ import { Link } from './Link'
 
 export function AboutMe() {
   return (
-    <section className="">
+    <section className="mb-32 scroll-mt-24">
       <p className="mb-4">
         Quando ganhei meu primeiro notebook, em 2011, descobri o incrível mundo
         da tecnologia, na época assistia a vídeos de programação com Visual
