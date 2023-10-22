@@ -17,7 +17,7 @@ export function SocialMediaItem({
         href={url}
         target="_blank"
         rel="noreferrer"
-        className="text-zinc-300 hover:text-zinc-100"
+        className="cursor-pointer text-zinc-300 hover:text-zinc-100"
       >
         <span className="sr-only">{alt}</span>
         <Icon className="h-8 w-8" />
