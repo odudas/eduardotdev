@@ -11,7 +11,6 @@ interface BootcampCardProps {
   description: string
   imageSrc: string
   altText: string
-  period: string
   link: string
   technologies: string[]
 }
@@ -21,7 +20,6 @@ export function BootcampCard({
   description,
   imageSrc,
   altText,
-  period,
   link,
   technologies,
 }: BootcampCardProps) {
@@ -53,7 +51,7 @@ export function BootcampCard({
           </a>
         </h3>
         <p className="text-sm leading-normal">{description}</p>
-        <ul className="mt-2 flex flex-wrap">
+        <ul className="mt-1 flex flex-wrap">
           {technologies.map((tech) => (
             <li key={tech} className="mr-1.5 mt-2">
               <TechnologieFlag name={tech} />
@@ -72,7 +70,6 @@ export function BootcampCard({
           decoding="async"
           className="rounded border-2 border-zinc-200/10 transition group-hover:border-zinc-200/20"
         />
-        <p className="absolute py-2 text-xs text-zinc-400">{period}</p>
       </div>
     </div>
   )
