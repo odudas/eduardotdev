@@ -4,6 +4,8 @@ import { FiExternalLink } from 'react-icons/fi'
 
 import Image from 'next/image'
 
+import { TechnologieFlag } from '../TechnologieFlag'
+
 interface BootcampCardProps {
   title: string
   description: string
@@ -11,6 +13,7 @@ interface BootcampCardProps {
   altText: string
   period: string
   link: string
+  technologies: string[]
 }
 
 export function BootcampCard({
@@ -20,6 +23,7 @@ export function BootcampCard({
   altText,
   period,
   link,
+  technologies,
 }: BootcampCardProps) {
   function handleCardLink() {
     window.open(link, '_blank')
@@ -48,7 +52,14 @@ export function BootcampCard({
             </span>
           </a>
         </h3>
-        <p className="mt-2 text-sm leading-normal">{description}</p>
+        <p className="text-sm leading-normal">{description}</p>
+        <ul className="mt-2 flex flex-wrap">
+          {technologies.map((tech) => (
+            <li key={tech} className="mr-1.5 mt-2">
+              <TechnologieFlag name={tech} />
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="z-10 col-span-2">
