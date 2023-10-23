@@ -1,5 +1,3 @@
-'use client'
-
 import { FiExternalLink } from 'react-icons/fi'
 
 import Image from 'next/image'
@@ -23,15 +21,8 @@ export function BootcampCard({
   link,
   technologies,
 }: BootcampCardProps) {
-  function handleCardLink() {
-    window.open(link, '_blank')
-  }
-
   return (
-    <div
-      onClick={handleCardLink}
-      className="group relative grid cursor-pointer grid-cols-8 gap-4 pb-1 transition-all"
-    >
+    <div className="group relative grid cursor-pointer grid-cols-8 gap-4 pb-1 transition-all">
       <div className="absolute -inset-x-6 -inset-y-6 z-0 block rounded-md transition group-hover:bg-zinc-800/50 group-hover:shadow-[inset_0_1px_0_0_rgba(250,250,250,0.1)] group-hover:drop-shadow-lg" />
 
       <div className="z-10 order-2 col-span-6">
@@ -42,6 +33,7 @@ export function BootcampCard({
             rel="noreferrer"
             className="inline-flex items-baseline font-medium leading-tight text-zinc-200 hover:text-blue-100"
           >
+            <span className="absolute -inset-x-6 -inset-y-4 block rounded" />
             <span>
               {title}
               <span className="inline-block">
@@ -60,17 +52,15 @@ export function BootcampCard({
         </ul>
       </div>
 
-      <div className="z-10 col-span-2">
-        <Image
-          src={imageSrc}
-          alt={altText}
-          width={200}
-          height={48}
-          loading="lazy"
-          decoding="async"
-          className="rounded border-2 border-zinc-200/10 transition group-hover:border-zinc-200/20"
-        />
-      </div>
+      <Image
+        src={imageSrc}
+        alt={altText}
+        width={200}
+        height={48}
+        loading="lazy"
+        decoding="async"
+        className="z-10 col-span-2 rounded border-2 border-zinc-200/10 transition group-hover:border-zinc-200/20"
+      />
     </div>
   )
 }

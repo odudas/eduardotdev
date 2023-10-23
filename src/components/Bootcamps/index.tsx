@@ -6,8 +6,8 @@ export function Bootcamps() {
       <div></div>
 
       <div>
-        <ul>
-          <li className="mb-12">
+        <ul className="group/list">
+          <li className="mb-12 transition-all hover:!opacity-100 group-hover/list:opacity-50">
             <BootcampCard
               link="#"
               imageSrc={`/bootcamps/ignite-reactjs.png`}
