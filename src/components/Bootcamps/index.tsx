@@ -10,6 +10,15 @@ export function Bootcamps() {
           <li className="mb-12 transition-all hover:!opacity-100 group-hover/list:opacity-50">
             <BootcampCard
               link="#"
+              imageSrc={`/bootcamps/nlw.png`}
+              altText=""
+              title="Next Level Week"
+              description="É um evento, dividido em duas trilhas, sendo uma iniciante e outra avaçada. Oferecendo uma oportunidade única para aprimorar os conhecimentos em desenvolvimento web, por meio de uma experiência prática, com desafios e utilizando as tecnologias mais utilizadas pelo mercado."
+            />
+          </li>
+          <li className="mb-12 transition-all hover:!opacity-100 group-hover/list:opacity-50">
+            <BootcampCard
+              link="#"
               imageSrc={`/bootcamps/ignite-reactjs.png`}
               altText=""
               title="Rocketseat Ignite React.Js"

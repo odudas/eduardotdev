@@ -10,7 +10,7 @@ interface BootcampCardProps {
   imageSrc: string
   altText: string
   link: string
-  technologies: string[]
+  technologies?: string[]
 }
 
 export function BootcampCard({
@@ -43,13 +43,16 @@ export function BootcampCard({
           </a>
         </h3>
         <p className="text-sm leading-normal">{description}</p>
-        <ul className="mt-1 flex flex-wrap">
-          {technologies.map((tech) => (
-            <li key={tech} className="mr-1.5 mt-2">
-              <TechnologieFlag name={tech} />
-            </li>
-          ))}
-        </ul>
+
+        {technologies && technologies.length > 0 && (
+          <ul className="mt-1 flex flex-wrap">
+            {technologies.map((tech) => (
+              <li key={tech} className="mr-1.5 mt-2">
+                <TechnologieFlag name={tech} />
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
       <Image
