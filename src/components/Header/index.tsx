@@ -1,5 +1,6 @@
 import { NavTabs } from './NavTabs'
 import { SocialMedias } from './SocialMedias'
+import { Typewriter } from './Typewriter'
 
 export function Header() {
   return (
@@ -8,9 +9,7 @@ export function Header() {
         <h1 className="text-5xl font-bold tracking-tight text-zinc-200">
           Eduardo Tavares
         </h1>
-        <h2 className="mt-3 text-xl font-medium tracking-tight text-zinc-200">
-          Desenvolvedor Front-end
-        </h2>
+        <Typewriter />
         <p className="mt-4 max-w-xs leading-normal">
           Crio aplicações web responsivas e acessíveis, visando a experiência de
           usuário.
