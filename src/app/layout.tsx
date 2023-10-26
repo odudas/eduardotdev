@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
+import { Flashlight } from '@/components/Flashlight'
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -21,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${roboto.className} bg-zinc-900 leading-relaxed text-zinc-400 antialiased`}
+        className={`${roboto.className} relative bg-zinc-900 leading-relaxed text-zinc-400 antialiased`}
       >
+        <Flashlight />
         <div className="mx-auto min-h-screen max-w-screen-xl px-24">
           <div className="flex justify-between gap-4">
             <Header />

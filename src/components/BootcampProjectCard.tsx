@@ -2,7 +2,7 @@ import { FiExternalLink } from 'react-icons/fi'
 
 import Image from 'next/image'
 
-import { TechnologieFlag } from '../TechnologieFlag'
+import { TechnologieFlag } from './TechnologieFlag'
 
 interface BootcampCardProps {
   title: string
@@ -13,7 +13,7 @@ interface BootcampCardProps {
   technologies?: string[]
 }
 
-export function BootcampCard({
+export function BootcampProjectCard({
   title,
   description,
   imageSrc,
