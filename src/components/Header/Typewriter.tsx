@@ -7,9 +7,10 @@ export function Typewriter() {
     words: [
       'Desenvolvedor Front-end',
       'Desenvolvedor Mobile',
-      'Estudante de TI',
+      'Estudante de Sistemas de Informação',
     ],
     loop: true,
+    delaySpeed: 2500,
   })
 
   return (
