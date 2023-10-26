@@ -1,4 +1,4 @@
-import { BootcampCard } from './BootcampCard'
+import { BootcampProjectCard } from '../BootcampProjectCard'
 
 export function Bootcamps() {
   return (
@@ -8,7 +8,7 @@ export function Bootcamps() {
       <div>
         <ul className="group/list">
           <li className="mb-12 transition-all hover:!opacity-100 group-hover/list:opacity-50">
-            <BootcampCard
+            <BootcampProjectCard
               link="#"
               imageSrc={`/bootcamps/nlw.png`}
               altText=""
@@ -17,7 +17,7 @@ export function Bootcamps() {
             />
           </li>
           <li className="mb-12 transition-all hover:!opacity-100 group-hover/list:opacity-50">
-            <BootcampCard
+            <BootcampProjectCard
               link="#"
               imageSrc={`/bootcamps/ignite-reactjs.png`}
               altText=""
